@@ -1,0 +1,14 @@
+type Query {
+    city(zipCode: String!): City
+}
+
+type City {
+    id: ID!
+    zipCode: String!
+    name: String!
+    temp: String!
+    timeZone: String!
+    elevation: String!
+    lat: String!
+    lon: String!
+}
